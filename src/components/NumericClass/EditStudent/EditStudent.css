@@ -1,0 +1,84 @@
+.EditStudent {
+  position: fixed;
+  z-index: 200;
+  border: 1px solid #eee;
+  box-shadow: 0 2px 2px #ccc;
+  background-color: white;
+  padding: 10px;
+  text-align: center;
+  box-sizing: border-box;
+  border-radius: 10px;
+  top: 30%;
+  left: 25%;
+  width: 50%;
+  transition: all 0.3s ease-out;
+}
+
+.Title {
+  text-shadow: 2px 7px 5px #eeaa73;
+  font-family: Verdana, Geneva, sans-serif;
+  font-size: 32px;
+  letter-spacing: -1.4px;
+  word-spacing: -1.4px;
+  color: #884c87;
+  font-weight: 700;
+  text-decoration: none;
+  font-style: normal;
+  font-variant: normal;
+  text-transform: uppercase;
+}
+
+.Text {
+  font-size: 18px;
+  font-weight: 550;
+  text-transform: none;
+}
+
+.Input {
+  display: block;
+  width: 30%;
+  margin: 8px;
+  margin-left: auto;
+  margin-right: auto;
+  box-sizing: border-box;
+  border-radius:8px;
+  outline: none;
+}
+
+.EditOpen {
+  animation: openEdit 0.4s ease-out forwards;
+}
+
+.EditClosed {
+  animation: closeEdit 0.4s ease-out forwards;
+}
+
+@keyframes openEdit {
+  0% {
+      opacity: 0;
+      transform: translateY(-100%);
+  }
+  50% {
+      opacity: 1;
+      transform: translateY(50%);
+  }
+  100% {
+      opacity: 1;
+      transform: translateY(0);
+  }
+}
+
+@keyframes closeEdit {
+  0% {
+      opacity: 1;
+      transform: translateY(0);
+  }
+  50% {
+      opacity: 0.8;
+      transform: translateY(60%);
+  }
+  100% {
+      opacity: 0;
+      transform: translateY(-100%);
+  }
+}
